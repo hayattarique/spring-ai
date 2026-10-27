@@ -1,16 +1,27 @@
-# Compiled class file
+# =========================================================
+# Root .gitignore for the spring-ai POC repo
+# Only source code is committed: src/, pom.xml, README.md.
+# Applies to every day-N/ project added under this folder.
+# =========================================================
+
+### Per-project git files (this root file is the only one we keep) ###
+**/.gitignore
+!/.gitignore
+.gitattributes
+
+### Maven wrapper & Spring Initializr boilerplate ###
+mvnw
+mvnw.cmd
+.mvn/
+HELP.md
+
+### Build output ###
+target/
+build/
+out/
+bin/
+.gradle/
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +29,43 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+*.log
 hs_err_pid*
 replay_pid*
+
+### IDE ###
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache/
+nbproject/private/
+
+### OS ###
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+### Secrets & local config (never commit API keys) ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+application-local.*
+application-secret*
+
+### Misc ###
+logs/
+tmp/
+*.tmp
+*.swp
+*~
