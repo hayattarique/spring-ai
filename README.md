@@ -3,7 +3,7 @@
 Daily proof-of-concept projects for learning **Spring AI**, one small Spring Boot app per day.
 Each `day-N/` folder is a standalone Maven project with its own README explaining the concepts.
 
-**Tech stack:** Java 21 · Spring Boot 4.1.2 · Spring AI 2.0.1 · OpenAI · Ollama
+**Tech stack:** Java 21 · Spring Boot 4.1.2 · Spring AI 2.0.1 · OpenAI · Ollama · Docker Model Runner
 
 ## Projects
 
@@ -11,6 +11,7 @@ Each `day-N/` folder is a standalone Maven project with its own README explainin
 |-----|-------|
 | [day-1](day-1/) | ChatModel, ChatClient and OpenAI basics |
 | [day-2-ollama](day-2-ollama/) | Running local AI models with Ollama |
+| [day-3-with-docker](day-3-with-docker/) | Docker Model Runner, OpenAI-compatible API and streaming |
 
 ## Running a project
 
